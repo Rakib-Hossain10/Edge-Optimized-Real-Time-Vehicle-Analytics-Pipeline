@@ -1,0 +1,41 @@
+# --- Python Virtual Environments ---
+cv_tracking_env1/
+venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Machine Learning Models ---
+# We ignore weights to keep the repo light. 
+# Keep your 'best.onnx' if you want it to deploy to Render automatically.
+models/*.pt
+models/*.pth
+# !models/best.onnx  <-- Uncomment this if you want to force-include the ONNX file
+
+# --- Temporary / Output Files ---
+temp_uploads/
+output/
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+
+# --- Editor / OS Specific ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Streamlit ---
+.streamlit/config.toml
+
+
+test_videos/
+test_images/
+outputs/
+notebooks/
+data/

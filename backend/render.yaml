@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: vehicle-analytics-backend
+    env: python
+    plan: free
+    Root Directory: (Leave Blank)
+    # The build command installs dependencies for your backend
+    buildCommand: pip install -r backend/requirements.txt
+    # We use gunicorn with the uvicorn worker for production stability
+    startCommand: gunicorn -w 1 -k uvicorn.workers.UvicornWorker backend.app.main:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: PYTHONPATH
+        value: "."
+
+
+
+
+
+
+
+
+
+
