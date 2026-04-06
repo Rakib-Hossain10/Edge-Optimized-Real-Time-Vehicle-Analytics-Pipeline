@@ -7,7 +7,7 @@ services:
     # The build command installs dependencies for your backend
     buildCommand: pip install -r backend/requirements.txt
     # We use gunicorn with the uvicorn worker for production stability
-    startCommand: gunicorn -w 1 -k uvicorn.workers.UvicornWorker --chdir backend app.main:app
+    startCommand: gunicorn -w 1 -k uvicorn.workers.UvicornWorker --chdir backend --timeout 120 app.main:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0
