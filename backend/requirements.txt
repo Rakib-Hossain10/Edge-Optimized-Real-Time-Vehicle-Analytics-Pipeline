@@ -7,3 +7,5 @@ gunicorn==25.3.0
 ultralytics
 numpy
 opencv-python-headless
+streamlit
+requests
