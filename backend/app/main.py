@@ -7,10 +7,16 @@ from app.inference import process_image_frame, initialize_models
 
 app = FastAPI(title="Vehicle Analytics API", version="1.0.0")
 
-# Configure CORS so Streamlit can talk to FastAPI
+# Define the origins that are allowed to talk to your backend
+origins = [
+    "http://localhost:3000",          # React/Next.js local
+    "http://localhost:8501",          # Streamlit local
+    "https://visionstream-frontend.onrender.com",  # Your production frontend
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=origins, 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
