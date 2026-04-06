@@ -1,6 +1,6 @@
 Build Command: pip install -r backend/requirements.txt
 
-Start Command: streamlit run backend/app/streamlit.py --server.port $PORT
+Start Command: streamlit run backend/app/streamlit.py --server.port $PORT --server.address 0.0.0.0
 
 Add Environment Variable".
 
