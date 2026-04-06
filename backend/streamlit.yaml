@@ -5,3 +5,5 @@ Start Command: streamlit run backend/app/streamlit.py --server.port $PORT
 Add Environment Variable".
 
 Key: BACKEND_URL    value: https://edge-optimized-real-time-vehicle.onrender.com
+
+PYTHON_VERSION    value: 3.10.12
