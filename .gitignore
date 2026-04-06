@@ -10,8 +10,7 @@ __pycache__/
 # --- Machine Learning Models ---
 # We ignore weights to keep the repo light. 
 # Keep your 'best.onnx' if you want it to deploy to Render automatically.
-models/*.pt
-models/*.pth
+
 # !models/best.onnx  <-- Uncomment this if you want to force-include the ONNX file
 
 # --- Temporary / Output Files ---
