@@ -4,11 +4,12 @@ import requests
 import numpy as np
 import tempfile
 import time
+import os
 
 # ---------------------------------------------------------
 # CONFIGURATION & UI SETUP
 # ---------------------------------------------------------
-API_URL = "http://localhost:8000"
+API_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 st.set_page_config(
     page_title="Vehicle Analytics | Glass Blue Edition",
