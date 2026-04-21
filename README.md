@@ -65,8 +65,7 @@ Average API Latency: ~250ms per frame (CPU-only).
 Peak RAM Usage: 380MB / 512MB.
 
 Throughput: 4-6 FPS (Cloud-CPU limitation; scales to 30+ FPS on NVIDIA Jetson with TensorRT).
-<<<<<<< HEAD
-=======
+
 
 
 Here is the output:
@@ -74,4 +73,3 @@ Here is the output:
 ![Project Result 1](result_images/1.png)
 
 ![Project Result 2](result_images/main.png)
->>>>>>> ef7bb25 (Upload Result Images)
