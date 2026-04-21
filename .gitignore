@@ -16,12 +16,8 @@ __pycache__/
 # --- Temporary / Output Files ---
 temp_uploads/
 output/
-*.mp4
-*.avi
-*.mov
-*.jpg
-*.jpeg
-*.png
+
+
 
 # --- Editor / OS Specific ---
 .vscode/
