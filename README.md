@@ -39,8 +39,8 @@ The system is split into two independent services communicating via a RESTful AP
 🛰️ Edge Deployment Philosophy
 Target Platform: NVIDIA Jetson (Nano / Xavier / Orin)
 
-This project deployed on Render.   Link:(https://visionstream-frontend.onrender.com)  
-Backend Link: , the codebase is architected specifically for Edge AI deployment:
+This project deployed on Render.   Link: (https://visionstream-frontend.onrender.com)  
+The codebase is architected specifically for Edge AI deployment:
 
 1. Model Interoperability: Weights are exported to ONNX format, allowing for seamless conversion to NVIDIA TensorRT for hardware-accelerated inference on Jetson boards.
 
